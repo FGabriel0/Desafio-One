@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Criptografia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./img/icon-menu-alura.svg" alt="Logo_alura" />
+      </header>
+      <section class="left-panel">
+        <div class="input-section">
+          <textarea id="inputText" placeholder="Digite seu texto"></textarea>
+          <p class="note">Apenas letras minúsculas e sem acento.</p>
+          <div class="buttons">
+            <button
+              id="encryptButton"
+              onclick="btnEncrypt()"
+              class="btn encrypt"
+            >
+              Criptografar
+            </button>
+            <button
+              id="decryptButton"
+              class="btn decrypt"
+              onclick="btnDecrypt()"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="right-panel">
+          <img src="./img/img.png" alt="Imagem ilustrativa" id="idImg" />
+          <p class="resp" id="resp"></p>
+          <p id="idAviso"></p>
+          <button class="btn btn-copia" id="btnCopia" onclick="copiar()">
+            Copiar!
+          </button>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
