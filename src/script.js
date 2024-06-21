@@ -1,5 +1,4 @@
- 
-let resp = document.querySelector("#resp")
+ let resp = document.querySelector("#resp")
 let aviso = document.querySelector("#idAviso")
 let textoArea = document.querySelector("#inputText")
 let imagem = document.querySelector("#idImg")
@@ -15,7 +14,7 @@ function btnEncrypt() {
         resp.innerText = encrypt;
         aviso.innerText = "";
         textoArea.value = "";
-        imagem.style.display = 'none'
+        imagem.style.display = "none"
         btnCopia.style.display = 'inline-block'
     }
 }
@@ -50,8 +49,6 @@ function validacao(texto) {
     if (texto == "") {
         resp.innerText = "Nenhuma mensagem encontrada";
         aviso.innerText = "Digite um texto que você deseja criptografar ou descriptografar.";
-        imagem.style.display = 'inline-block'
-        verificaTamanhoTela()
         btnCopia.style.display = 'none'
 
         return false;
@@ -59,8 +56,6 @@ function validacao(texto) {
     else if (texto.match(/[A-Z]/)) {
         resp.innerText = "O texto só pode conter letras minúsculas sem acento.";
         aviso.innerText = "Corrija o texto e tente novamente.";
-        imagem.style.display = 'inline-block'
-        verificaTamanhoTela()
         btnCopia.style.display = 'none'
 
         return false;
@@ -68,8 +63,6 @@ function validacao(texto) {
     else if(texto.match(/[áàâãéèêíïóôõöúçñ]/)){
         resp.innerText = "O texto só pode conter letras minúsculas sem acento.";
         aviso.innerText = "Corrija o texto e tente novamente.";
-        imagem.style.display = 'inline-block'
-        verificaTamanhoTela()
         btnCopia.style.display = 'none'
 
         return false;
@@ -80,10 +73,4 @@ function validacao(texto) {
 }
 
 
-function verificaTamanhoTela() {
-    const larguraTela = window.innerWidth;
 
-    if (larguraTela < 850) {
-        imagem.style.display = 'none';
-    } 
-}
