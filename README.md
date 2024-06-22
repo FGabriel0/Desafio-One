@@ -57,11 +57,16 @@ function btnDecrypt() {
 ### Responsividade
 O projeto é responsivo e foi adaptado para funcionar em tablets e smartphones.
 
-![Mensagem tablet]((https://github.com/FGabriel0/Desafio-One/blob/main/src/img/views/tablet.png?raw=true))
+### Tela tablet
 
-![Mensagem smathphone]((https://github.com/FGabriel0/Desafio-One/blob/main/src/img/views/mobile.png?raw=true))
+![Mensagem tablet](https://github.com/FGabriel0/Desafio-One/blob/main/src/img/views/tablet.png?raw=true)
+
+### Tela Smathphone
+
+![Mensagem smathphone](https://github.com/FGabriel0/Desafio-One/blob/main/src/img/views/mobile.png?raw=true)
 
 ### Tecnologias Utilizadas
+
 -**HTML**
 -**CSS**
 -**JavaScript**
